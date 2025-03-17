@@ -64,16 +64,16 @@ int main(int argc, char** argv){
     sleep(1);
 
     //apply force on FrontLeft leg
-    std::array<double, 3> rel_pos_;
-    std::array<double, 3> force_;
-    force_[2] = 20;
+    // std::array<double, 3> rel_pos_;
+    // std::array<double, 3> force_;
+    // force_[2] = 20;
 
-    force_message_.link_name = "FL_knee";
-    force_message_.rel_pos = rel_pos_;
-    force_message_.force = force_;
-    force_message_.time = 2;
-    force_pub_->publish(force_message_);
-    std::cout<<"applying force on FL_knee ..."<<std::endl;
+    // force_message_.link_name = "FL_knee";
+    // force_message_.rel_pos = rel_pos_;
+    // force_message_.force = force_;
+    // force_message_.time = 2;
+    // force_pub_->publish(force_message_);
+    // std::cout<<"applying force on FL_knee ..."<<std::endl;
 
     sleep(5);
 
